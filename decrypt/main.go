@@ -9,9 +9,15 @@ import (
 )
 
 func main() {
-	mypath := "D:/école"
+	var mypath string
 	var code string
+
+	fmt.Println("please enter the path")
+	fmt.Scan(&mypath)
+
+	fmt.Println("please enter the keyword")
 	fmt.Scan(&code)
+
 	treemaker(mypath, code)
 }
 func treemaker(actpath string, code string) {
